@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-import tree from "@/public/images/eugene-golovesov-4aRxQKX5FU0-unsplash.jpg";
+import tree from "@/public/images/eugene-golovesov-4aRxQKX5FU0-unsplash.webp";
 import { getServerSession } from "next-auth";
 import Link from "next/link";
 import { authOptions } from "./api/auth/authOptions";
