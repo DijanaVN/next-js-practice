@@ -3,6 +3,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import image from "../public/images/logo dvn.webp";
 
 const NavBar = () => {
   const { status, data: session } = useSession();
@@ -55,11 +56,7 @@ const NavBar = () => {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <Link href={"/"}>
-                <Image
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                  alt="Your Company"
-                />
+                <Image className="h-8 w-auto" src={image} alt="Your Company" />
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
